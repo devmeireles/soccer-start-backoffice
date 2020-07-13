@@ -35,6 +35,7 @@ export default {
       { icon: "mdi-earth", text: "Nations", route: "/nations" },
       { icon: "mdi-account-group", text: "Clubs", route: "/clubs" },
       { icon: "mdi-account", text: "Players", route: "/players" },
+      { icon: "mdi-trophy", text: "Leagues", route: "/leagues" },
     ]
   })
 };

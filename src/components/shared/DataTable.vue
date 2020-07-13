@@ -15,7 +15,7 @@
       <v-simple-table class="table">
         <thead class="table-header">
           <tr>
-            <th v-for="(header, i) in headers" :key="i">
+            <th v-for="(header, i) in headers" :key="i" :class="`table-column ${header.align}`">
               <span>{{ header.text }}</span>
             </th>
           </tr>
@@ -26,7 +26,7 @@
               <td
                 v-for="(header, id) in headers"
                 :key="id"
-                class="table-column"
+                :class="`table-column ${header.align}`"
                 :width="header.width"
               >
                 <div class="clickable">
@@ -137,3 +137,17 @@ export default {
   }
 };
 </script>
+
+<style lang="scss">
+.table-column {
+  &.start {
+    text-align: start !important;
+  }
+  &.end {
+    text-align: end !important;
+  }
+  &.center {
+    text-align: center !important;
+  }
+}
+</style>

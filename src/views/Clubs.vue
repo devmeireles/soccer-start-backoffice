@@ -33,7 +33,7 @@ export default {
       },
       {
         value: "logo",
-        align: "start",
+        align: "end",
         sortable: false,
         width: 50,
         component: {
@@ -52,7 +52,7 @@ export default {
       },
       {
         value: "logo",
-        align: "start",
+        align: "end",
         sortable: false,
         width: 20,
         component: {
@@ -68,12 +68,22 @@ export default {
         value: "stadium",
         internalValue: "city",
         sortable: false,
-        width: 75
+        width: 75,
+        align: "start"
       },
       {
         text: "Coach",
         value: "coach",
         internalValue: "name",
+        align: "start",
+        sortable: false,
+        width: 50
+      },
+
+      {
+        text: "League",
+        value: "league",
+        internalValue: "slug",
         align: "start",
         sortable: false,
         width: 50
